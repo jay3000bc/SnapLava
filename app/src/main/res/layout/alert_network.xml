@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="5dp"
+    android:background="#b94f4fa3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internet is not available. Please connect to the internet and try again. "
+        android:layout_gravity="center_vertical"
+        android:textSize="22dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#000"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRY AGAIN"
+        android:id="@+id/button_tryAgain"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="4dp"
+        android:background="#a8f5f3f3"
+        />
+</LinearLayout>

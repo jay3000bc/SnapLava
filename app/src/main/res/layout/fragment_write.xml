@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snaplava.SnapLava.frags.WriteFragment">
+
+        <RelativeLayout
+            android:id="@+id/laybg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#00bcb7b7">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            >
+
+         <android.support.design.widget.FloatingActionButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:id="@+id/fab_text"
+             android:layout_alignParentRight="true"
+             android:background="@color/colorPrimary"
+             android:src="@drawable/ic_action_writ"
+             android:layout_marginBottom="10dp"
+             android:layout_marginRight="10dp"
+             />
+        </RelativeLayout>
+
+
+
+</FrameLayout>

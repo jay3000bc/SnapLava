@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snaplava.SnapLava.ProfileActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+android:layout_margin="10dp"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:id="@+id/image_follow"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        app:cardCornerRadius="17dp"
+android:layout_margin="10dp"
+        android:elevation="5dp"
+
+        android:layout_marginTop="5dp"
+
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buton_follow"
+            android:text="Follow"
+            android:background="#FFF"
+            android:gravity="center"
+            android:textColor="#6277ef"
+            />
+    </android.support.v7.widget.CardView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="About"
+    android:textColor="#a4a4a4"
+    android:fontFamily="sans-serif"
+    android:layout_marginLeft="10dp"
+    android:textSize="25dp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_follow"
+        android:layout_marginLeft="5dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+        android:textSize="15dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#a4a4a4"
+        />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#ccc"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+
+
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+     >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:text="FOLLOWERS"
+            />
+
+        <TextView
+            android:id="@+id/Follower_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:layout_marginRight="5dp"
+            android:gravity="end"
+            android:text="235" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:text="FOLLOWING"
+            />
+
+        <TextView
+            android:id="@+id/Following_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:layout_marginRight="5dp"
+            android:gravity="end"
+            android:text="235" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text3"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:text="SNAPS"
+            />
+
+        <TextView
+            android:id="@+id/Snap_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:layout_marginRight="5dp"
+            android:gravity="end"
+            android:text="235" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

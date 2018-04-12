@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.snaplava.SnapLava.CollageActivity">
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:id="@+id/layout_final"
+
+    android:visibility="gone"
+    >
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel_colage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+            android:text="Cancel"
+            android:gravity="center_vertical"
+            android:textSize="17dp"
+            android:drawableLeft="@drawable/ic_back"
+            />
+
+        <TextView
+            android:id="@+id/proceed_colage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:text="Save"
+            android:textSize="17dp"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/ic_proced"
+            />
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayoutone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:minHeight="?attr/actionBarSize"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/TabLayoutStyle"/>
+
+    <!-- View pager to swipe views -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/container_critical"
+
+        ></FrameLayout>
+
+
+</LinearLayout>

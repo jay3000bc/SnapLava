@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e74d3d</color>
+    <color name="colorPrimaryDark">#bae74d3d</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textviewBack">#77263039</color>
+    <color name="textColor">#fff</color>
+    <color name="buttoncolor">#dd523b</color>
+    <color name="facebook_log">#157dc4</color>
+    <color name="twitter_log">#80c9fc</color>
+    <color name="random_one">#e62222</color>
+    <color name="random_two">#f1e10a</color>
+    <color name="random_three">#51ef13</color>
+    <color name="random_four">#0ff1da</color>
+    <color name="random_five">#1822f1</color>
+    <color name="random_six">#e919e2</color>
+    <color name="random_seven">#f7182e</color>
+    <color name="random_eight">#9e19f1</color>
+    <color name="random_nine">#ed1ca4</color>
+    <color name="random_ten">#0de785</color>
+    <color name="alert_back">#caffffff</color>
+    <color name="color_download">#56B193</color>
+    <color name="color_share">#62378A</color>
+    <color name="color_email">#F56CAA</color>
+    <color name="color_plusone">#FFB935</color>
+    <color name="color_like">#E1523C</color>
+    <color name="color_all">#4695C8</color>
+</resources>

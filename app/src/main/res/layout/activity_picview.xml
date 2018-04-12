@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.snaplava.SnapLava.PicviewActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearlayout_action"
+        android:background="#000">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:id="@+id/and_imageview"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+
+                />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_back"
+                android:id="@+id/circ_frm"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Poster_face"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/medium_20"
+                    android:elevation="4dp"
+                    android:padding="1dp"
+                    android:background="@drawable/foobar"
+                    />
+            </FrameLayout>
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tranding_gradient" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/poster_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Date"
+            android:layout_marginLeft="10dp"
+            android:maxLines="2"
+            android:text="My Wild Cat"
+            android:textColor="#fff"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="February 02, 2018"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="21dp"
+            android:backgroundTint="#00ffffff"
+            card_view:cardCornerRadius="25dp"
+            card_view:cardPreventCornerOverlap="true">
+
+            <ImageView
+
+                android:id="@+id/realtimeblur"
+                android:layout_width="65dp"
+                android:layout_height="306dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/animate_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/translate_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imv1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="6dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/download"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_download" />
+
+                    <ImageView
+                        android:id="@+id/imv2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="6dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/share"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_share" />
+
+
+                    <ImageView
+                        android:id="@+id/imv4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="3dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/plus_one"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_plusone" />
+
+                    <ImageView
+                        android:id="@+id/imv5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="3dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/like"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_like" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/special"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:id="@+id/show_all"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/all_show"
+                        android:padding="8dp" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="55dp"
+            android:layout_marginRight="19dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/likesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+             <ImageView
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+                 android:layout_margin="2dp"
+                 android:src="@drawable/ic_hol_star"
+                 />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/ic_hol_star"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/ic_hol_star"
+                    />  <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_hol_star"
+                />  <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_hol_star"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fullscren_new"
+            android:layout_width="30dp"
+            android:background="#fff"
+            android:textSize="27dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="30dp"
+            android:text="&#xf065;"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="TransitView"
+            />
+    </RelativeLayout>
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/login_buttonTwitter_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <com.facebook.share.widget.ShareButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/fb_share_button"
+        />
+
+    <TextView
+        android:id="@+id/wallpaperset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/backgroundwall"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+
+        android:text="Set as Wallpaper "
+        android:textColor="#000" />
+</RelativeLayout>

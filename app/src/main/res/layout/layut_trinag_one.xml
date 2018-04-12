@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:id="@+id/image_aftersetting"
+    tools:context="com.snaplava.SnapLava.frags.layout.VertCutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_height="310dp"
+        android:layout_width="match_parent"
+        android:backgroundTint="#424dec"
+
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        >
+
+
+        <com.snaplava.SnapLava.customs.RectangularView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:id="@+id/View_one"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:src="@drawable/background" />
+
+        <com.snaplava.SnapLava.customs.RectangularView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/View_two"
+            android:src="@drawable/background" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id = "@+id/drag_image"
+        android:visibility="invisible"
+        android:alpha="0.7"
+        />
+
+</LinearLayout>

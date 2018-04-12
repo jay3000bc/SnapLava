@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp" android:id="@+id/image_aftersetting"
+    android:layout_gravity="center"
+    tools:context="com.snaplava.SnapLava.frags.layout.VertCutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="300dp">
+        <com.snaplava.SnapLava.customs.RectangularView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+
+            android:scaleType="centerCrop"
+            android:id="@+id/View_one"
+            android:layout_centerInParent="true"
+
+android:background="@drawable/corners"
+            android:layout_gravity="center"
+            android:src="@drawable/background" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="120dp"
+
+    android:layout_centerHorizontal="true"
+    >
+    <android.support.v7.widget.CardView
+
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+        android:background="#000"
+        android:id="@+id/lay_cont"
+    >
+        <android.support.v7.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/defend"
+            android:background="#000">
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+
+                android:id="@+id/ukrey"
+                >
+        <com.snaplava.SnapLava.customs.RectangularView
+            android:id="@+id/View_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id = "@+id/drag_image"
+        android:visibility="invisible"
+        android:alpha="0.7"
+        />
+
+</RelativeLayout>

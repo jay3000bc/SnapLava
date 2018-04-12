@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:id="@+id/image_aftersetting"
+    tools:context="com.snaplava.SnapLava.frags.layout.VertCutFragment">
+<RelativeLayout
+    android:layout_width="150dp"
+    android:layout_height="300dp"
+    android:id="@+id/rel1"
+    android:layout_alignParentRight="true"
+    >
+  <com.snaplava.SnapLava.customs.RectangularView
+            android:id="@+id/View_one"
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+
+
+      android:layout_centerVertical="true"
+      android:src="@drawable/background" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:id="@+id/rel2"
+        android:layout_alignParentLeft="true"
+
+        >
+        <com.snaplava.SnapLava.customs.RectangularView
+            android:id="@+id/View_two"
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/background" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id = "@+id/drag_image"
+        android:visibility="invisible"
+        android:alpha="0.7"
+        />
+
+</RelativeLayout>

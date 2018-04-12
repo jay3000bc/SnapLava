@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:background="#01ffffff"
+android:layout_height="match_parent" >
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/textV"
+               android:text="Search categories"
+               android:layout_alignParentTop="true"
+               />
+            <ListView
+                android:layout_below="@+id/textV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"
+                android:layout_above="@+id/search_button"
+                ></ListView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="Search"
+                android:id="@+id/search_button"
+                />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_margin="7dp"
+        android:layout_height="25dp"
+         android:id="@+id/cancel_dialog"
+        android:layout_gravity="right|top"
+        android:contentDescription="contentDescription"
+        android:src="@drawable/ic_action_cancel" />
+</FrameLayout>
+</FrameLayout>

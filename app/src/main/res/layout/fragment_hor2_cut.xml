@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:id="@+id/image_aftersetting"
+    tools:context="com.snaplava.SnapLava.frags.layout.VertCutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        >
+        <com.snaplava.SnapLava.customs.RectangularView
+            android:id="@+id/View_one"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+
+
+            android:src="@drawable/background" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+
+        >
+        <com.snaplava.SnapLava.customs.RectangularView
+            android:id="@+id/View_two"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+
+
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/background" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id = "@+id/drag_image"
+        android:visibility="invisible"
+        android:alpha="0.7"
+        />
+
+</RelativeLayout>

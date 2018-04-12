@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_marginBottom="1dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/imageView_unit"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/medium_20"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caption"
+            android:id="@+id/unit_caption"
+            android:layout_toRightOf="@+id/imageView_unit"
+            android:layout_alignParentTop="true"
+            android:maxLines="3"
+            android:textColor="#080808"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="4dp"
+
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_unit"
+            android:layout_below="@+id/unit_caption"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="15dp"
+            android:text="date here"
+            android:textColor="#b7b5b5"
+            android:layout_toRightOf="@+id/imageView_unit"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timestamp_unit"
+            android:layout_below="@+id/user_unit"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="15dp"
+            android:text="date here"
+            android:textColor="#b7b5b5"
+            android:layout_toRightOf="@+id/imageView_unit"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

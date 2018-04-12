@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/e_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="com.snaplava.SnapLava.RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_mainid"
+android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:id="@+id/name_reg"
+        android:hint = "Name"
+        android:textSize="20dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:layout_marginBottom="10dp"
+
+
+        /> <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect"
+    android:textColor="@color/textColor"
+    android:textColorHint="@color/textColor"
+    android:hint = "Email"
+    android:textSize="20dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:textCursorDrawable="@drawable/cursor_color"
+    android:layout_marginBottom="10dp"
+        android:id="@+id/email_reg"
+
+    /> <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect"
+    android:textColor="@color/textColor"
+    android:textColorHint="@color/textColor"
+    android:hint = "Password"
+    android:textSize="20dp"
+        android:id="@+id/pass_reg"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+        android:inputType="textPassword"
+    android:textCursorDrawable="@drawable/cursor_color"
+    android:layout_marginBottom="10dp"
+
+
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rct_btn"
+        android:textColor="@color/textColor"
+        android:text = "CREATE ACCOUNT"
+        android:textSize="20dp"
+        android:id="@+id/create_acc"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+
+        android:layout_marginBottom="10dp"
+        />
+    </LinearLayout>
+</RelativeLayout>

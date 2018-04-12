@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.myinnos:AwesomeImagePicker-1.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AwesomeImagePicker-1.0.2.aar/8939731ad9bed062c474b80b7d8c43a8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AwesomeImagePicker-1.0.2.aar/8939731ad9bed062c474b80b7d8c43a8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.myinnos/AwesomeImagePicker/1.0.2/e7a3aeb4bb008c85c111490e34d14eeb7d9bcc2e/AwesomeImagePicker-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

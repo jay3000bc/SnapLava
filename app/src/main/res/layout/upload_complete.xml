@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+     >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="4dp"
+        app:cardBackgroundColor="#fff"
+        android:id="@+id/anchor_card"
+        >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding ="10dp"
+        android:layout_margin="10dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/uploaded_image"
+            android:src="@drawable/people"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Your Photo is now on SnapLava"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_below="@id/uploaded_image"
+            android:id="@+id/uploaed_title"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploaded_text"
+            android:text="The process is completed. \n now you can go on with the next step. "
+            android:textColor="#7c7777"
+            android:gravity="center"
+            android:layout_below="@+id/uploaed_title"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/uploaded_text"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/flat_btn1"
+                android:layout_gravity="left"
+                android:text="Cancel"
+                android:textSize="15dp"
+                android:background="#c1bbbb"
+                android:layout_margin="10dp"
+                android:textColor="#ec1d1d"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/flat_btn2"
+                android:layout_gravity="right"
+                android:text="Got it!"
+                android:textSize="15dp"
+                android:background="#dcd7d7"
+                android:layout_margin="10dp"
+                android:textColor="#04e1e9"
+
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

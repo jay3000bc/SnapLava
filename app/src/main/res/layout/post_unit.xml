@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+<ImageView
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:id="@+id/image_recycler"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_margin="10dp"
+    android:src="@drawable/background"
+    android:scaleType="centerCrop"
+    />
+
+   <EditText
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/image_Title"
+
+       android:layout_toRightOf="@+id/image_recycler"
+       android:hint="title"
+       android:layout_marginTop="70dp"
+       android:layout_marginRight="5dp"
+       android:textSize="15dp"
+       android:padding="3dp"
+       android:background="@drawable/sharp_cor"
+
+       />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/image_category"
+           android:background="@drawable/sharp_cor"
+           android:editable="false"
+           android:hint="category"
+           android:layout_below="@+id/image_recycler"
+             />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/description"
+        android:background="@drawable/sharp_cor"
+        android:gravity="top"
+        android:hint="description"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/image_category"
+        />
+</RelativeLayout>
